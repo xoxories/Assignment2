@@ -1,12 +1,12 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = ""; // default XAMPP kosong
-$dbname = "travel_db";
+$host = "database-1.cilzpw3ngquz.us-east-1.rds.amazonaws.com";
+$user = "admin"; // Replace if your RDS username is different
+$password = "Afrian0003!"; // Replace with your actual password
+$database = "database-1"; // Or whatever DB name you create
 
-$conn = mysqli_connect($host, $user, $password, $dbname);
+$conn = mysqli_connect($host, $user, $password, $database);
 
 if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
 }
 ?>
