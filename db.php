@@ -1,12 +1,12 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = ""; // default XAMPP kosong
-$dbname = "travel_db";
+$host = 'database-1.che47cqav4hm.us-east-1.rds.amazonaws.com';
+$user = 'admin';        // Replace with your RDS master username
+$pass = 'Afrian0003!'; // Replace with your RDS master password
+$db = 'database-1';      // You will create this database inside RDS
 
-$conn = mysqli_connect($host, $user, $password, $dbname);
+$conn = mysqli_connect($host, $user, $pass, $db);
 
 if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
 }
 ?>
