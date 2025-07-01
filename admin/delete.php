@@ -1,1 +1,0 @@
-<!-- admin/delete.php placeholder -->
